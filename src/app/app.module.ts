@@ -9,13 +9,19 @@ import { CrudComponent } from './crud/crud.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { SharedModule } from './shared/shared.module';
 import { MaterialModule } from './material/material.module';
+import { ChildComponent } from './component-communication/child/child.component';
+import { ParentComponent } from './component-communication/parent/parent.component';
+import { CommunicationService } from './component-communication/services/communication.service';
 
 @NgModule({
   declarations: [
     AppComponent,
     DisplayHideComponent,
     ComponentCommunicationComponent,
+
     CrudComponent,
+    ChildComponent,
+    ParentComponent,
 
   ],
   imports: [
@@ -25,7 +31,7 @@ import { MaterialModule } from './material/material.module';
     MaterialModule,
     SharedModule
   ],
-  providers: [],
+  providers: [CommunicationService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

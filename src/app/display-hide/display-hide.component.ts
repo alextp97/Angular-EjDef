@@ -7,6 +7,21 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DisplayHideComponent implements OnInit {
 
+  show: boolean = false;
+  showText: string = 'Mostrar';
+
+  showHide(){
+
+    if(this.show){
+      this.show = false;
+      this.showText = 'Mostrar';
+    }
+    else {
+      this.show = true;
+      this.showText = 'Ocultar';
+    }
+  }
+
   constructor() { }
 
   ngOnInit(): void {

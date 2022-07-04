@@ -1,1 +1,15 @@
-<p>display-hide works!</p>
+
+
+
+<h1>Ejercicio Display - Hide</h1>
+<hr>
+
+<div class="container">
+    <div class="btnHide">
+        <button mat-raised-button color="primary" (click)="showHide()">{{ showText }}</button>
+    </div>
+
+    <div *ngIf="show" class="showText">
+        <p>¡Hola mundo!</p>
+    </div>
+</div>
