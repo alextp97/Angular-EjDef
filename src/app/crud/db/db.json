@@ -38,13 +38,53 @@
     },
     {
       "id": 5,
-      "username": "Gabriel",
+      "username": "Gabriel El Pelos",
       "password": "1234",
       "password2": "1234",
       "email": "gabriel@gmail.com",
-      "offers": true,
+      "offers": false,
+      "coutry": "Alemania",
+      "city": "Marmolejoo"
+    },
+    {
+      "id": 6,
+      "username": "pep",
+      "password": "12345",
+      "password2": "12345",
+      "email": "pepe@hotmail.com",
+      "offers": false,
       "coutry": "Portugal",
-      "city": "Marmolejo"
+      "city": "Juan"
+    },
+    {
+      "id": 7,
+      "username": "Hola",
+      "password": "jdasbajbdjabja",
+      "password2": "jdasbajbdjabja",
+      "email": "vda@gmail.com",
+      "offers": false,
+      "coutry": "México",
+      "city": "pokemon"
+    },
+    {
+      "id": 8,
+      "username": "jorge",
+      "password": "1234",
+      "password2": "1234",
+      "email": "hii@gmail.com",
+      "offers": true,
+      "coutry": "España",
+      "city": "Jaén ni pollas :D"
+    },
+    {
+      "id": 9,
+      "username": "Annel",
+      "password": "12345",
+      "password2": "12345",
+      "email": "annel@gmail.com",
+      "offers": true,
+      "coutry": "España",
+      "city": "Martos :D"
     }
   ]
 }

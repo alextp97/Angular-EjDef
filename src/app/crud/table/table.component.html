@@ -1,1 +1,28 @@
-<p>table works!</p>
+<table class="dataTable">
+    <tr class="tableHeader">
+        <th>Nombre de Usuario</th>
+        <th>Correo</th>
+        <th>Suscrito</th>
+        <th>País</th>
+        <th>Ciudad</th>
+        <th>Acciones</th>
+    </tr>
+
+    <tr class="tableBody" *ngFor="let user of listUsers">
+
+        <td>{{user.username}}</td>
+        <td>{{user.email}}</td>
+        <td>{{user.offers}}</td>
+        <td>{{user.coutry}}</td>
+        <td>{{user.city}}</td>
+        <td> <a>
+                <mat-icon (click)="modifyUser(user.id)" aria-hidden="false" aria-label="Edit">edit</mat-icon>
+            </a>
+            <a>
+                <mat-icon (click)="eliminateUser(user.id)" aria-hidden="false" aria-label="Delete">delete</mat-icon>
+            </a>
+            
+        </td>
+      </tr>
+</table>
+

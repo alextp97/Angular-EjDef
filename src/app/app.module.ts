@@ -13,13 +13,13 @@ import { ChildComponent } from './component-communication/child/child.component'
 import { ParentComponent } from './component-communication/parent/parent.component';
 import { CommunicationService } from './component-communication/services/communication.service';
 import { ObservableService } from './component-communication/services/observable.service';
+import { CrudModule } from './crud/crud.module';
 
 @NgModule({
   declarations: [
     AppComponent,
     DisplayHideComponent,
     ComponentCommunicationComponent,
-
     CrudComponent,
     ChildComponent,
     ParentComponent,
@@ -29,6 +29,7 @@ import { ObservableService } from './component-communication/services/observable
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
+    CrudModule,
     MaterialModule,
     SharedModule
   ],

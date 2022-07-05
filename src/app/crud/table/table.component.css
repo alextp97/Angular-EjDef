@@ -1,0 +1,17 @@
+
+.dataTable {
+
+    margin-left: 65px;
+    width: 800px;
+}
+
+.tableHeader {
+
+    text-align: left;
+    font-size: 18px;
+    
+}
+
+.tableBody {
+    font-size: 14px;
+}
