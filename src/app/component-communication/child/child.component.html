@@ -3,14 +3,14 @@
     <h2>Child</h2>  
 
 
-    <span class="message">message: {{ (msgInput ? msgInput: msg) | uppercase}}</span> 
+    <span class="message">message: {{ msg | uppercase}}</span> 
 
 
     <div class="btn-child">
         
         <button mat-raised-button color="primary" class="button" (click)="childService()">Use Service</button>
         <button mat-raised-button color="primary" class="button" (click)="sendMsgOutput()">Use Output Property</button>
-        <button mat-raised-button color="primary" class="button">Use Observable</button>
+        <button mat-raised-button color="primary" class="button" (click)="sendMsgObsChild()">Use Observable</button>
     </div>
 
 </div>

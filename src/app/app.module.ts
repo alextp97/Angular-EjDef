@@ -12,6 +12,7 @@ import { MaterialModule } from './material/material.module';
 import { ChildComponent } from './component-communication/child/child.component';
 import { ParentComponent } from './component-communication/parent/parent.component';
 import { CommunicationService } from './component-communication/services/communication.service';
+import { ObservableService } from './component-communication/services/observable.service';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { CommunicationService } from './component-communication/services/communi
     MaterialModule,
     SharedModule
   ],
-  providers: [CommunicationService],
+  providers: [CommunicationService,
+              ObservableService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

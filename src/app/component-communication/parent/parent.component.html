@@ -8,7 +8,7 @@
     <div class="btn-parent">
         <button mat-raised-button color="primary" class="button" (click)="parentService()">Use Service</button>
         <button mat-raised-button color="primary" class="button" (click)="sendMsgInput()">Use Input Property</button>
-        <button mat-raised-button color="primary" class="button">Use Observable</button>
+        <button mat-raised-button color="primary" class="button" (click)="sendMsgObservable()">Use Observable</button>
     </div>
 
     <app-child [msgInput]="parentMessage" (childMsg)="getChildMsg($event)"></app-child>
