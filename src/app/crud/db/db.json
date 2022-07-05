@@ -1,0 +1,50 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "username": "Alejandro",
+      "password": "12345",
+      "email": "alejandro@gmail.com",
+      "offers": false,
+      "coutry": "Spain",
+      "city": "Jaen"
+    },
+    {
+      "id": 2,
+      "username": "Annel",
+      "password": "123456",
+      "email": "annel@gmail.com",
+      "offers": true,
+      "coutry": "Spain",
+      "city": "Granada"
+    },
+    {
+      "id": 3,
+      "username": "Lionel",
+      "password": "1234",
+      "email": "lion@gmail.com",
+      "offers": false,
+      "coutry": "United Kingdom",
+      "city": "London"
+    },
+    {
+      "id": 4,
+      "username": "Ana",
+      "password": "123456",
+      "email": "ana@gmail.com",
+      "offers": true,
+      "coutry": "Japan",
+      "city": "Kioto"
+    },
+    {
+      "id": 5,
+      "username": "Gabriel",
+      "password": "1234",
+      "password2": "1234",
+      "email": "gabriel@gmail.com",
+      "offers": true,
+      "coutry": "Portugal",
+      "city": "Marmolejo"
+    }
+  ]
+}
