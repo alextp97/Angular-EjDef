@@ -14,7 +14,8 @@ export class NavBarComponent implements OnDestroy {
   fillerNav = [
     { name: "Display - Hide", route: "displayHide" },
     { name: "Component Comunication", route: "componentCommunication"},
-    { name: "CRUD", route: "crud"}
+    { name: "CRUD", route: "crud"},
+    { name: "Traffic Light", route: "trafficLight"}
   ];
 
 

@@ -14,6 +14,9 @@ import { ParentComponent } from './component-communication/parent/parent.compone
 import { CommunicationService } from './component-communication/services/communication.service';
 import { ObservableService } from './component-communication/services/observable.service';
 import { CrudModule } from './crud/crud.module';
+import { TrafficLightComponent } from './traffic-light/traffic-light.component';
+import { ControladorComponent } from './traffic-light/controlador/controlador.component';
+import { LightsComponent } from './traffic-light/lights/lights.component';
 
 @NgModule({
   declarations: [
@@ -23,6 +26,9 @@ import { CrudModule } from './crud/crud.module';
     CrudComponent,
     ChildComponent,
     ParentComponent,
+    TrafficLightComponent,
+    ControladorComponent,
+    LightsComponent,
 
   ],
   imports: [
