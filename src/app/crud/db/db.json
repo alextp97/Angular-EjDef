@@ -28,63 +28,44 @@
       "city": "London"
     },
     {
-      "id": 4,
-      "username": "Ana",
-      "password": "123456",
-      "email": "ana@gmail.com",
-      "offers": true,
-      "coutry": "Japan",
-      "city": "Kioto"
-    },
-    {
       "id": 5,
-      "username": "Gabriel El Pelos",
+      "username": "Rubén",
       "password": "1234",
       "password2": "1234",
-      "email": "gabriel@gmail.com",
+      "email": "ruben@gmail.com",
       "offers": false,
-      "coutry": "Alemania",
-      "city": "Marmolejoo"
+      "coutry": "México",
+      "city": "Tamales"
     },
     {
       "id": 6,
-      "username": "pep",
-      "password": "12345",
-      "password2": "12345",
-      "email": "pepe@hotmail.com",
+      "username": "Sergio",
+      "password": "1234",
+      "password2": "1234",
+      "email": "sergi@hotmail.com",
       "offers": false,
-      "coutry": "Portugal",
-      "city": "Juan"
+      "coutry": "Alemania",
+      "city": "Berlín"
     },
     {
       "id": 7,
-      "username": "Hola",
-      "password": "jdasbajbdjabja",
-      "password2": "jdasbajbdjabja",
-      "email": "vda@gmail.com",
-      "offers": false,
-      "coutry": "México",
-      "city": "pokemon"
+      "username": "Gabriel",
+      "password": "12345",
+      "password2": "12345",
+      "email": "gabi@gmail.com",
+      "offers": true,
+      "coutry": "España",
+      "city": "Granada"
     },
     {
       "id": 8,
-      "username": "jorge",
+      "username": "María",
       "password": "1234",
       "password2": "1234",
-      "email": "hii@gmail.com",
+      "email": "maria@bosonit.com",
       "offers": true,
-      "coutry": "España",
-      "city": "Jaén ni pollas :D"
-    },
-    {
-      "id": 9,
-      "username": "Annel",
-      "password": "12345",
-      "password2": "12345",
-      "email": "annel@gmail.com",
-      "offers": true,
-      "coutry": "España",
-      "city": "Martos :D"
+      "coutry": "Francia",
+      "city": "Le lasagne"
     }
   ]
 }

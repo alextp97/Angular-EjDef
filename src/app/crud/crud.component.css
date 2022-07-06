@@ -5,7 +5,7 @@ h1 {
 }
 
 hr {
-    width: 1150px;
+    width: 1170px;
 }
 
 
@@ -13,4 +13,17 @@ hr {
     display: flex;
     flex-direction: row;
     justify-content: center;  
+}
+
+@media (max-width: 1170px){
+    .formContainer {
+        display: flex;
+        flex-direction: column;
+        overflow: auto;
+    }
+
+    hr {
+        width: 90%;
+    }
+  
 }

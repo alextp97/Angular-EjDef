@@ -2,7 +2,7 @@
 <!--Contenedor del Formulario-->
 
 
-<form (ngSubmit)="createUser()" [formGroup]="myForm" autocomplete="off" class="form">
+<form [formGroup]="myForm" autocomplete="off" class="form">
 
     <h1>Formulario de Registro</h1>
 
@@ -76,9 +76,9 @@
 
         <br>
 
-        <!--<span *ngIf="fieldNoValid('email')">
+        <span *ngIf="fieldNoValid('email')">
             Debe de ser un email válido
-        </span>-->
+        </span>
     </p>
 
 
@@ -104,8 +104,10 @@
                 </mat-select>
         </mat-form-field>
 
+        <br>
+
         <span *ngIf="fieldNoValid('coutry')">
-            Selecciona una opción :D
+            Selecciona una opción 
         </span>
     </p>
 
@@ -119,6 +121,7 @@
                             required>
         </mat-form-field>
 
+        <br>
         <span *ngIf="fieldNoValid('city')">
             No puede estar vacío
         </span>
@@ -128,12 +131,13 @@
     <p>
         <button mat-raised-button color="primary"
                 type="submit"
-               >Crear</button>
+                (click)="createUser()"
+               >Guardar</button>
     </p>
     
 </form>
 
-<span>Valid</span>
+<!--<span>Valid</span>
 <pre>{{ myForm.valid }}</pre>
 <pre>{{ myForm.errors | json}}</pre>
 
@@ -144,4 +148,4 @@
 <pre>{{ myForm.touched }}</pre>
 
 <span>Value</span>
-<pre>{{ myForm.value | json }}</pre>
+<pre>{{ myForm.value | json }}</pre>-->

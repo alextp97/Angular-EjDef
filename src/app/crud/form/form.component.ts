@@ -10,6 +10,8 @@ import { ValidatorPasswordService } from '../services/validator-password.service
   styleUrls: ['./form.component.css']
 })
 export class FormComponent implements OnInit {
+
+  //changeText: string = 'Crear';
   
   //Implemento la interfaz de User para los campos del formulario
   user!: User;
@@ -59,9 +61,9 @@ export class FormComponent implements OnInit {
       return;
     }
 
-
     //Si el Id no existe, se crea un usuario nuevo
-    if(this.myForm.get('id')?.value === null){
+    if(this.myForm.get('id')?.value === ""  || this.myForm.get('id')?.value === null ){
+      //this.changeText = 'Crear';
 
       this.userService.newUser( this.myForm.value )
       .subscribe(() => this.userService.sendUser())
@@ -70,6 +72,7 @@ export class FormComponent implements OnInit {
 
     }else{ //En caso contrario, modifica el usuario ya existente
 
+      //this.changeText = 'Editar';
       this.userService.modifyUser(this.myForm.value)
         .subscribe(() => this.userService.sendUser())
 
