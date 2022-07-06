@@ -10,7 +10,7 @@ import { ObservableService } from '../services/observable.service';
 export class ParentComponent implements OnInit {
 
 
-  parentMessage: string = '';
+  parentMessage: String = new String('');
   childMessage: string = '';
 
 
@@ -31,12 +31,12 @@ export class ParentComponent implements OnInit {
 
   //Enviar mensaje al hijo mediante un servicio
   parentService(){
-    this._communicationService.sendToChildService('parent using service');
+    this._communicationService.sendToChildService('PARENT USING SERVICE');
   }
 
   //Enviar mensaje al hijo usando Input
-  sendMsgInput(){
-    this.parentMessage = 'parent using input property';
+  sendMsgInput(): void{
+    this.parentMessage = new String('PARENT USING INPUT PROPERTY');
   }
 
 
@@ -47,7 +47,7 @@ export class ParentComponent implements OnInit {
 
   //Envio mensaje al hijo mediante el servicio de observable
   sendMsgObservable(){
-    this._observableService.sendFromParent('parent using observable');
+    this._observableService.sendFromParent('PARENT USING OBSERVABLE');
   }
 
 }

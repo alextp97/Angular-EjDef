@@ -11,7 +11,7 @@ export class ChildComponent implements OnInit {
 
 
 
-  @Input('msgInput') msg = ''; //Decorador Input para poder recibir datos del padre
+  @Input('msgInput') msg = new String(''); //Decorador Input para poder recibir datos del padre
   @Output() childMsg = new EventEmitter<string>(); //Decorador del Output para enviar datos al padre
 
 
