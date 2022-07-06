@@ -1,31 +1,14 @@
 {
   "users": [
     {
-      "id": 1,
-      "username": "Alejandro",
-      "password": "12345",
-      "email": "alejandro@gmail.com",
-      "offers": false,
-      "coutry": "Spain",
-      "city": "Jaen"
-    },
-    {
-      "id": 2,
+      "id": 3,
       "username": "Annel",
-      "password": "123456",
+      "password": "1234",
+      "password2": "1234",
       "email": "annel@gmail.com",
       "offers": true,
-      "coutry": "Spain",
-      "city": "Granada"
-    },
-    {
-      "id": 3,
-      "username": "Lionel",
-      "password": "1234",
-      "email": "lion@gmail.com",
-      "offers": false,
-      "coutry": "United Kingdom",
-      "city": "London"
+      "coutry": "Portugal",
+      "city": "Lisboa"
     },
     {
       "id": 5,
@@ -63,9 +46,19 @@
       "password": "1234",
       "password2": "1234",
       "email": "maria@bosonit.com",
-      "offers": true,
+      "offers": false,
       "coutry": "Francia",
       "city": "Le lasagne"
+    },
+    {
+      "id": 9,
+      "username": "Alejandro",
+      "password": "12345",
+      "password2": "12345",
+      "email": "alex@gmail.com",
+      "offers": true,
+      "coutry": "España",
+      "city": "Jaén"
     }
   ]
 }

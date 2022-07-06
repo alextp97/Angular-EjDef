@@ -21,3 +21,21 @@
     margin-right: 16px;
     font-size: 16px;
 }
+
+@media (max-width: 1200px){
+    .child{
+        width: auto;
+        margin: 5px 10px 0px;
+    }
+
+    .btn-child {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+    .btn-child > button {
+        margin: 5px 0px;
+        width: 180px;
+    }
+}

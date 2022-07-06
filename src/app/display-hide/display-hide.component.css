@@ -15,7 +15,6 @@ hr {
 
 .btnText {
     padding: 8px 16px;
-    background-color: #97A1DA;
     color: white;
     font-size: 16px;
     border: none;
@@ -39,4 +38,22 @@ hr {
     margin-top: 40px;
     font-size: 32px;
     text-align: center;
+}
+
+@media (max-width: 1200px){
+    hr{
+        width: auto;
+        margin: 0px 10px;
+    }
+    .container {
+        width: auto;
+        margin: 0px 20px;
+    }
+
+    @media (max-width: 400px){
+        .showText {
+            width: auto;
+        }
+    }
+    
 }

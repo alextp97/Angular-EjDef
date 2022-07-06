@@ -7,3 +7,12 @@ h1 {
 hr {
     width: 1175px;
 }
+
+
+@media (max-width: 1200px){
+    hr {
+        width: auto;
+        margin: 0 5px 10px;
+    }
+
+}
