@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { Countries, Name } from '../interfaces/country.interface';
 import { User } from '../interfaces/user.interface';
+import { CountryService } from '../services/country.service';
 import { UsersService } from '../services/users.service';
 import { ValidatorPasswordService } from '../services/validator-password.service';
 
@@ -16,7 +18,7 @@ export class FormComponent implements OnInit {
   //Implemento la interfaz de User para los campos del formulario
   user!: User;
 
-  coutry: string[] = ["España", "Francia", "Portugal", "México", "Alemania", "Italia", "Japón"];
+  coutry: Countries[] = [];
   
   //Para ocultar la contraseña
   hide = true;
@@ -39,9 +41,13 @@ export class FormComponent implements OnInit {
 
   constructor( private fb: FormBuilder,
                private userService: UsersService,
+               private countryService: CountryService,
                private validPass: ValidatorPasswordService) { }
 
   ngOnInit(): void {
+
+    this.countryService.getAllCountries()
+      .subscribe((countries) => this.coutry = countries )
   }
 
   //Compruebo si los campos han sido tocados o tienen errores para mostrar los datos

@@ -98,8 +98,8 @@
                     required>
                     
                     <mat-option *ngFor="let countries of coutry"
-                                [value]="countries">
-                                    {{ countries }}           
+                                [value]="countries.name">
+                                    {{ countries.name }}           
                     </mat-option>
                 </mat-select>
         </mat-form-field>
@@ -137,7 +137,7 @@
     
 </form>
 
-<!--<span>Valid</span>
+<span>Valid</span>
 <pre>{{ myForm.valid }}</pre>
 <pre>{{ myForm.errors | json}}</pre>
 
@@ -148,4 +148,4 @@
 <pre>{{ myForm.touched }}</pre>
 
 <span>Value</span>
-<pre>{{ myForm.value | json }}</pre>-->
+<pre>{{ myForm.value | json }}</pre>

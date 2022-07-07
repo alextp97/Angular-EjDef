@@ -42,12 +42,6 @@ export class UsersService {
   }
 
 
-
-
-
-
-
-
   //Eventos para cuando creo un nuevo usuario
   sendUser(){
     this.subject.next();
