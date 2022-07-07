@@ -1,0 +1,21 @@
+
+
+.controller {
+    margin-top: 40px;
+}
+
+h1 {
+    text-align: center;
+    text-decoration: underline;
+}
+
+.check {
+    margin-left: 45px;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+mat-form-field {
+   margin-left: 45px;
+}
+

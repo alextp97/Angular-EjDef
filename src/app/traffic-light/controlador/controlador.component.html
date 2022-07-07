@@ -1,1 +1,22 @@
-<p>controlador works!</p>
+
+
+<div class="controller">
+
+    <h1>Controlador</h1>
+
+    <label>Color</label>
+    <select *ngIf="button === 'On'"
+            [(ngModel)]="choseColor"
+            (ngModelChange)="emitToTraffic()">
+
+            
+        <option *ngFor="let color of colors"
+                [ngValue]="color">
+                    {{ color | titlecase }}                     
+        </option>
+    </select>
+
+    <input type="checkbox" (click)="changeText()">
+    <label>{{ button }}</label>
+</div>
+

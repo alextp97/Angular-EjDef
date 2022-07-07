@@ -1,15 +1,30 @@
 
 
 .semaforo {
-    width: 200px;
-    height: 500px;
-    background-color: gray;
-    margin-left: 48px;
+    width: 210px;
+    height: 520px;
+    background-color: #3f3e3a;
+    margin: 20px 0px 0px 48px;
+    box-shadow: 0px 0px 15px 5px #000000;
+    border: 3px solid #252626;
+    border-radius: 5px;
+    
 }
 
-#rojo, #amarillo, #rojo {
-    width: 100px;
-    height: 100px;
+.lights {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+#rojo, #amarillo, #verde {
+    width: 140px;
+    height: 140px;
     border-radius: 50%;
-    background-color: aqua;
+    border: 2px solid #252626;
+    margin: 13px 0px ;
+    background-color: white;
+
 }

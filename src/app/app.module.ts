@@ -17,6 +17,7 @@ import { CrudModule } from './crud/crud.module';
 import { TrafficLightComponent } from './traffic-light/traffic-light.component';
 import { ControladorComponent } from './traffic-light/controlador/controlador.component';
 import { LightsComponent } from './traffic-light/lights/lights.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -36,6 +37,7 @@ import { LightsComponent } from './traffic-light/lights/lights.component';
     AppRoutingModule,
     BrowserAnimationsModule,
     CrudModule,
+    FormsModule,
     MaterialModule,
     SharedModule
   ],

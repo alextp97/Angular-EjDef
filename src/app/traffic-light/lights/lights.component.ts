@@ -12,4 +12,12 @@ export class LightsComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  getColor(){
+
+  }
+
+  getSelectedColor(){
+    
+  }
+
 }
