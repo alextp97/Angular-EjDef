@@ -1,6 +1,8 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
+import { NgChartsModule } from 'ng2-charts';
+
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { DisplayHideComponent } from './display-hide/display-hide.component';
@@ -39,6 +41,7 @@ import { ExternalLibraryComponent } from './external-library/external-library.co
     CrudModule,
     FormsModule,
     MaterialModule,
+    NgChartsModule,
     SharedModule
   ],
   providers: [CommunicationService,
