@@ -16,7 +16,6 @@ import { ObservableService } from './component-communication/services/observable
 import { CrudModule } from './crud/crud.module';
 import { TrafficLightComponent } from './traffic-light/traffic-light.component';
 import { ControladorComponent } from './traffic-light/controlador/controlador.component';
-import { LightsComponent } from './traffic-light/lights/lights.component';
 import { FormsModule } from '@angular/forms';
 
 @NgModule({
@@ -29,7 +28,6 @@ import { FormsModule } from '@angular/forms';
     ParentComponent,
     TrafficLightComponent,
     ControladorComponent,
-    LightsComponent,
 
   ],
   imports: [

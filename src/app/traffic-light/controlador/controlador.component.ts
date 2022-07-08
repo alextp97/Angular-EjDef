@@ -33,7 +33,7 @@ export class ControladorComponent implements OnInit {
     }
     else{
       this.button = 'Off'
-      this.choseColor = 'hola';
+      this.choseColor = '';
     }
 
     this.selectedColor.emit(this.choseColor);

@@ -7,6 +7,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TrafficLightComponent implements OnInit {
 
+
+  colors!: string[];
+  selectedColor: string = '';
+
+  getColor($event: string[]){
+    this.colors = $event;
+  }
+
+  getSelectedColor($event: string){
+    this.selectedColor = $event;
+
+  }
+
   constructor() { }
 
   ngOnInit(): void {
