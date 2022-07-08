@@ -4,12 +4,14 @@ import { ComponentCommunicationComponent } from './component-communication/compo
 import { CrudComponent } from './crud/crud.component';
 import { DisplayHideComponent } from './display-hide/display-hide.component';
 import { TrafficLightComponent } from './traffic-light/traffic-light.component';
+import { ExternalLibraryComponent } from './external-library/external-library.component';
 
 const routes: Routes = [
   { path: 'displayHide', component: DisplayHideComponent },
   { path: 'componentCommunication', component: ComponentCommunicationComponent},
   { path: 'crud', component: CrudComponent},
   { path: 'trafficLight', component: TrafficLightComponent},
+  { path: 'externalLibrary', component: ExternalLibraryComponent},
   { path: '**', redirectTo: 'displayHide'}
 ];
 

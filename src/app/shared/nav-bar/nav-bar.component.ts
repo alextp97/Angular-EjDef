@@ -15,7 +15,8 @@ export class NavBarComponent implements OnDestroy {
     { name: "Display - Hide", route: "displayHide" },
     { name: "Component Comunication", route: "componentCommunication"},
     { name: "CRUD", route: "crud"},
-    { name: "Traffic Light", route: "trafficLight"}
+    { name: "Traffic Light", route: "trafficLight"},
+    { name: "External Library", route: "externalLibrary"}
   ];
 
 

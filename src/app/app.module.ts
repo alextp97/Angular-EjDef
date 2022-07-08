@@ -17,6 +17,7 @@ import { CrudModule } from './crud/crud.module';
 import { TrafficLightComponent } from './traffic-light/traffic-light.component';
 import { ControladorComponent } from './traffic-light/controlador/controlador.component';
 import { FormsModule } from '@angular/forms';
+import { ExternalLibraryComponent } from './external-library/external-library.component';
 
 @NgModule({
   declarations: [
@@ -28,6 +29,7 @@ import { FormsModule } from '@angular/forms';
     ParentComponent,
     TrafficLightComponent,
     ControladorComponent,
+    ExternalLibraryComponent,
 
   ],
   imports: [
