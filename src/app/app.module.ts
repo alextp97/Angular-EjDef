@@ -20,6 +20,8 @@ import { ExternalLibraryComponent } from './external-library/external-library.co
 import { ObservableService } from './component-communication/services/observable.service';
 import { ParentComponent } from './component-communication/parent/parent.component';
 import { TrafficLightComponent } from './traffic-light/traffic-light.component';
+import { BarsComponent } from './external-library/graphics/bars/bars.component';
+import { DonutComponent } from './external-library/graphics/donut/donut.component';
 
 
 
@@ -27,11 +29,13 @@ import { TrafficLightComponent } from './traffic-light/traffic-light.component';
 @NgModule({
   declarations: [
     AppComponent,
+    BarsComponent,
     ControladorComponent,
     ComponentCommunicationComponent,
     CrudComponent,
     ChildComponent,
     DisplayHideComponent,
+    DonutComponent,
     ExternalLibraryComponent,
     ParentComponent,
     TrafficLightComponent,
