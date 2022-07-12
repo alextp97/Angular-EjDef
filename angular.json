@@ -17,6 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
+            "allowedCommonJsDependencies": ["chart.js"],
             "outputPath": "dist/ejercicios-angular",
             "index": "src/index.html",
             "main": "src/main.ts",
@@ -104,5 +105,7 @@
       }
     }
   },
-  "defaultProject": "Ejercicios_Angular"
+  "cli": {
+    "analytics": false
+  }
 }

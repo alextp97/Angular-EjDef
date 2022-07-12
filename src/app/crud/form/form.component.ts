@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { UntypedFormBuilder, UntypedFormGroup, Validators } from '@angular/forms';
 import { Countries, Name } from '../interfaces/country.interface';
 import { User } from '../interfaces/user.interface';
 import { CountryService } from '../services/country.service';
@@ -25,7 +25,7 @@ export class FormComponent implements OnInit {
 
 
   //Mi formGroup
-  myForm: FormGroup = this.fb.group({
+  myForm: UntypedFormGroup = this.fb.group({
     id: [""],
     username: [ '', [Validators.required, Validators.minLength(3)] ],
     password: [ '', [Validators.required, Validators.minLength(4)]],
@@ -39,7 +39,7 @@ export class FormComponent implements OnInit {
     validators: [ this.validPass.samePass('password','password2')]
   });
 
-  constructor( private fb: FormBuilder,
+  constructor( private fb: UntypedFormBuilder,
                private userService: UsersService,
                private countryService: CountryService,
                private validPass: ValidatorPasswordService) { }
