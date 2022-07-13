@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { UntypedFormBuilder, UntypedFormGroup, Validators } from '@angular/forms';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Countries, Name } from '../interfaces/country.interface';
 import { User } from '../interfaces/user.interface';
 import { CountryService } from '../services/country.service';
@@ -23,9 +23,11 @@ export class FormComponent implements OnInit {
   //Para ocultar la contraseña
   hide = true;
 
+  hide2 = true;
+
 
   //Mi formGroup
-  myForm: UntypedFormGroup = this.fb.group({
+  myForm: FormGroup = this.fb.group({
     id: [""],
     username: [ '', [Validators.required, Validators.minLength(3)] ],
     password: [ '', [Validators.required, Validators.minLength(4)]],
@@ -39,7 +41,7 @@ export class FormComponent implements OnInit {
     validators: [ this.validPass.samePass('password','password2')]
   });
 
-  constructor( private fb: UntypedFormBuilder,
+  constructor( private fb: FormBuilder,
                private userService: UsersService,
                private countryService: CountryService,
                private validPass: ValidatorPasswordService) { }

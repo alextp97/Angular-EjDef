@@ -17,7 +17,7 @@ export class ValidatorPasswordService {
       const field2 = formGroup.get(pass2)?.value;
 
       if(field1 !== field2){
-        formGroup.get(field2)?.setErrors({ notSame: true });
+        formGroup.get(pass2)?.setErrors({ notSame: true });
         return { notSame: true};
       }
 

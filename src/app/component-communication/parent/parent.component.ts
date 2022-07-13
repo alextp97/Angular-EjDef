@@ -10,7 +10,7 @@ import { ObservableService } from '../services/observable.service';
 export class ParentComponent implements OnInit {
 
 
-  parentMessage: string = '';
+  parentMessage: String = new String;
   childMessage: string = '';
 
 
@@ -36,7 +36,8 @@ export class ParentComponent implements OnInit {
 
   //Enviar mensaje al hijo usando Input
   sendMsgInput(){
-    this.parentMessage = 'PARENT USING INPUT PROPERTY';
+    
+   this.parentMessage = new String('PARENT USING INPUT PROPERTY');
   }
 
 

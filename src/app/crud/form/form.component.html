@@ -52,9 +52,9 @@
             <mat-label>Repita la contraseña</mat-label>
             <input matInput
                    formControlName="password2" 
-                   [type]="hide ? 'password' : 'text'" required>
-            <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
-            <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+                   [type]="hide2 ? 'password' : 'text'" required>
+            <button mat-icon-button matSuffix (click)="hide2 = !hide2" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
+            <mat-icon>{{hide2 ? 'visibility_off' : 'visibility'}}</mat-icon>
             </button>
         </mat-form-field>
 
@@ -107,7 +107,7 @@
         <br>
 
         <span *ngIf="fieldNoValid('coutry')">
-            Selecciona una opción 
+            Debe de seleccionar un país 
         </span>
     </p>
 

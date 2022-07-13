@@ -1,26 +1,6 @@
 {
   "users": [
     {
-      "id": 3,
-      "username": "Annel",
-      "password": "1234",
-      "password2": "1234",
-      "email": "annel@gmail.com",
-      "offers": true,
-      "coutry": "Portugal",
-      "city": "Lisboa"
-    },
-    {
-      "id": 5,
-      "username": "Rubén",
-      "password": "1234",
-      "password2": "1234",
-      "email": "ruben@gmail.com",
-      "offers": false,
-      "coutry": "México",
-      "city": "Tamales"
-    },
-    {
       "id": 6,
       "username": "Sergio",
       "password": "1234",
@@ -61,16 +41,6 @@
       "city": "Jaén"
     },
     {
-      "id": 10,
-      "username": "Jorge",
-      "password": "12345",
-      "password2": "12345",
-      "email": "jorge@boso.com",
-      "offers": true,
-      "coutry": "Algeria",
-      "city": "No sé"
-    },
-    {
       "id": 11,
       "username": "Jenaro",
       "password": "12345",
@@ -78,7 +48,37 @@
       "email": "la@gmail.com",
       "offers": false,
       "coutry": "Andorra",
-      "city": "Hii"
+      "city": "La Massana"
+    },
+    {
+      "id": 12,
+      "username": "Marta",
+      "password": "1234",
+      "password2": "1234",
+      "email": "marta@gmail.com",
+      "offers": true,
+      "coutry": "Brazil",
+      "city": "Río de Janeiro"
+    },
+    {
+      "id": 13,
+      "username": "David",
+      "password": "12345",
+      "password2": "12345",
+      "email": "filipe@gmail.com",
+      "offers": true,
+      "coutry": "Portugal",
+      "city": "Oporto"
+    },
+    {
+      "id": 14,
+      "username": "Rubén",
+      "password": "123456",
+      "password2": "123456",
+      "email": "rub@rub.com",
+      "offers": false,
+      "coutry": "Bermuda",
+      "city": "Donde está ese país?"
     }
   ]
 }

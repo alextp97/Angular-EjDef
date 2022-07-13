@@ -4,6 +4,10 @@ h1 {
     text-align: center;
 }
 
+h3 {
+    margin-top: 20px;
+}
+
 hr {
     width: 1150px;
     margin: 0 auto;
@@ -23,7 +27,7 @@ hr {
 }
 
 .btnHide {
-    margin: 40px 0px;
+    margin: 20px 0px;
 }
 
 .showText {
@@ -39,6 +43,7 @@ hr {
     margin-top: 40px;
     font-size: 32px;
     text-align: center;
+    color: white;
 }
 
 @media (max-width: 1200px){

@@ -1,8 +1,12 @@
 
 .dataTable {
 
-    margin-left: 65px;
+    margin-left: 50px;
     width: 800px;
+    border: 2px solid #666bc2;
+    border-radius: 5px;
+    box-shadow: 10px 9px 14px 3px #cbc9da;
+    background: rgba(226, 224, 243, 0.3);
 }
 
 .tableHeader {
