@@ -11,6 +11,7 @@ export class ControladorComponent implements OnInit {
 
   colors: string[] = ['rojo', 'amarillo', 'verde'];
   choseColor: string = "rojo";
+  selected: boolean = false;
   button: string = 'Off';
 
   //Outputs para enviar los datos al componente del semáforo
@@ -29,10 +30,12 @@ export class ControladorComponent implements OnInit {
 
     if(this.button === 'Off'){
       this.button = 'On'
+      this.selected = true;
       this.choseColor = 'rojo'
     }
     else{
       this.button = 'Off'
+      this.selected = false
       this.choseColor = '';
     }
 
