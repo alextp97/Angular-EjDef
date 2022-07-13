@@ -79,6 +79,16 @@
       "offers": false,
       "coutry": "Bermuda",
       "city": "Donde está ese país?"
+    },
+    {
+      "id": 15,
+      "username": "Annel",
+      "password": "Hola",
+      "password2": "Hola",
+      "email": "annel@bosonit.com",
+      "offers": false,
+      "coutry": "Curaçao",
+      "city": "Daddy Yankee"
     }
   ]
 }

@@ -52,6 +52,8 @@ export class FormComponent implements OnInit {
       .subscribe((countries) => this.coutry = countries )
   }
 
+ 
+
   //Compruebo si los campos han sido tocados o tienen errores para mostrar los datos
   fieldNoValid( field: string ){
     return this.myForm.controls[field].errors

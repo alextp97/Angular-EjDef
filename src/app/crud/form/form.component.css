@@ -1,14 +1,13 @@
 
 .form {
     width: 300px;
-    padding-left: 10px;
+    padding: 8px 0px 0px 20px;
     margin-bottom: 10px;
     border: 2px solid #666bc2;
     border-radius: 5px;
     box-shadow: 10px 9px 14px 3px #cbc9da;
     background: rgba(226, 224, 243, 0.3);
 }
-
 
 
 .mat-hint {

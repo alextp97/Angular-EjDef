@@ -1,8 +1,11 @@
 
 .dataTable {
-
     margin-left: 50px;
+    padding: 10px 0 0 15px;
     width: 800px;
+
+    border-collapse: separate;
+    border-spacing: 0px 10px;
     border: 2px solid #666bc2;
     border-radius: 5px;
     box-shadow: 10px 9px 14px 3px #cbc9da;
@@ -10,14 +13,13 @@
 }
 
 .tableHeader {
-
     text-align: left;
     font-size: 18px;
-    
+    margin: 5px 0px 0px 0px;
 }
 
 .tableBody {
-    font-size: 14px;
+    font-size: 16px;
 }
 
 @media (max-width: 1170px){
