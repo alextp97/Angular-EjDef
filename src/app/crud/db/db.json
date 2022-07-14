@@ -86,9 +86,19 @@
       "password": "Hola",
       "password2": "Hola",
       "email": "annel@bosonit.com",
-      "offers": false,
+      "offers": true,
       "coutry": "Curaçao",
       "city": "Daddy Yankee"
+    },
+    {
+      "id": 16,
+      "username": "Lucía",
+      "password": "12345",
+      "password2": "12345",
+      "email": "lucy@vacaciones.es",
+      "offers": true,
+      "coutry": "Cambodia",
+      "city": "Pues eso"
     }
   ]
 }

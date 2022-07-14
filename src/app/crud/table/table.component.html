@@ -1,4 +1,7 @@
+<!--Tabla que muestra los datos que están en la db-->
 <table class="dataTable">
+
+    <!--Nombre de las colummnas-->
     <tr class="tableHeader">
         <th>Nombre de Usuario</th>
         <th>Correo</th>
@@ -8,13 +11,24 @@
         <th>Acciones</th>
     </tr>
 
+    <!--Imprimo los datos en cada fila de la tabla-->
     <tr class="tableBody" *ngFor="let user of listUsers">
 
         <td>{{user.username}}</td>
         <td>{{user.email}}</td>
-        <td>{{user.offers}}</td>
+
+        <!--Con un ngif else, muestro un check o una x en funcion de si el valor devuelto es true o false-->
+        <td *ngIf="user.offers === true; else cross">
+            <mat-icon>check_circle</mat-icon>
+        </td>
+            <ng-template #cross>
+                <mat-icon>cancel</mat-icon>
+            </ng-template>
+
         <td>{{user.coutry}}</td>
         <td>{{user.city}}</td>
+
+        <!--Enlaces mediante unos iconos para editar o borrar-->
         <td> <a>
                 <mat-icon (click)="modifyUser(user.id)" aria-hidden="false" aria-label="Edit">edit</mat-icon>
             </a>
@@ -23,6 +37,7 @@
             </a>
             
         </td>
+
       </tr>
 </table>
 
