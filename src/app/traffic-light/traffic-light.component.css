@@ -79,3 +79,11 @@ hr {
     }
 
 }
+
+@media (max-width: 1170px){
+
+    hr {
+        width: 90%;
+    }
+  
+}

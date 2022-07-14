@@ -8,3 +8,11 @@ hr {
     margin: 25px auto;
 }
 
+@media (max-width: 1170px){
+
+    hr {
+        width: 90%;
+    }
+  
+}
+

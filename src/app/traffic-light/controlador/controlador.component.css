@@ -9,11 +9,20 @@ h1 {
     text-decoration: underline;
 }
 
-label {
+.title {
 
+    margin-left: 36px;
     font-size: 18px;
 }
 
+.labelBtn {
+    font-size: 18px;
+}
+
+.checkbox {
+
+    margin: 0px 5px 0px 5px;
+}
 
 mat-form-field {
    margin-left: 45px;

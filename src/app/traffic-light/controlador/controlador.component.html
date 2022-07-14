@@ -4,14 +4,14 @@
 
     <h1>Controlador</h1>
 
-    <label>Color</label>
+    <label class="title">Color</label>
     <select 
             [(ngModel)]="choseColor"
             (change)="emitToTraffic()"
             [disabled]="!selected"
             class="selectTraffic">
-
             
+        <!--Opciones del select-->    
         <option *ngFor="let color of colors"
                 [ngValue]="color">
                     {{ color | titlecase }}                     
@@ -19,6 +19,6 @@
     </select>
 
     <input type="checkbox" (click)="changeText()" class="checkbox">
-    <label>{{ button }}</label>
+    <label class="labelBtn">{{ button }}</label>
 </div>
 
