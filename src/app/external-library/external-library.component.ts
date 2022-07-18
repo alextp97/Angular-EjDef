@@ -10,12 +10,10 @@ import { Component, OnInit } from '@angular/core';
 export class ExternalLibraryComponent implements OnInit {
 
   
- 
-  constructor() {  }
+  constructor() {}
 
   ngOnInit() {
   
-
       }
   }
 

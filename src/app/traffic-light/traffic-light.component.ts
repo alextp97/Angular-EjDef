@@ -7,17 +7,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TrafficLightComponent implements OnInit {
 
-
-  colors!: string[];
   selectedColor: string = '';
 
-  getColor($event: string[]){
-    this.colors = $event;
-  }
-
+  //Esta funcion se encarga de guardar el color que el usuario va seleccionando en el desplegable
   getSelectedColor($event: string){
     this.selectedColor = $event;
-
   }
 
   constructor() { }

@@ -28,7 +28,6 @@ hr {
 
 
 /* Círculos para el semáforo */
-
 .lights {
 
     display: flex;
@@ -80,6 +79,7 @@ hr {
 
 }
 
+/* Para que se ajuste cuando el dispositivo sea más pequeño */
 @media (max-width: 1170px){
 
     hr {

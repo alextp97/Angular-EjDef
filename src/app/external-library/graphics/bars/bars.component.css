@@ -1,4 +1,15 @@
+
+
 .graph {
     width: 1170px;
     margin: 0 auto;
+}
+
+/* Código para cuando se mire desde dispositivos móviles */
+@media (max-width: 1170px){
+
+    .graph {
+        width: auto;
+    }
+  
 }

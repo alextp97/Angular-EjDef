@@ -1,8 +1,10 @@
 
+<!--Contenedor del padre-->
 <div class="parent">
 
     <h2>Parent</h2>
 
+    <!--En este span se muestran los mensajes del hijo-->
     <span class="message">message: {{ childMessage | uppercase }}</span>
 
     <div class="btn-parent">
@@ -11,6 +13,7 @@
         <button mat-raised-button color="primary" class="button" (click)="sendMsgObservable()">Use Observable</button>
     </div>
 
+    <!--Componente del hijo donde se ejecuta el Input y el Output-->
     <app-child [msg]="parentMessage" (childMsg)="getChildMsg($event)"></app-child>
 
 </div>

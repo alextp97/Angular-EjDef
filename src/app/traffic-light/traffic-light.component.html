@@ -1,17 +1,18 @@
 
-
 <h1>Ejercicio Traffic Light</h1>
 <hr>
 
-<div class="container">
-    <div class="semaforo">
-        <div class="lights">
-            <div class="circulo" [ngClass]="{rojo: selectedColor == 'rojo'}"></div>
-            <div class="circulo" [ngClass]="{amarillo: selectedColor == 'amarillo'}"></div>
-            <div class="circulo" [ngClass]="{verde: selectedColor == 'verde'}"></div>
+    <!--Contenedor que agrupa tanto al div del semaforo como el de las luces-->
+    <div class="container">
+        <div class="semaforo">
+            <div class="lights">
+                <div class="circulo" [ngClass]="{rojo: selectedColor == 'rojo'}"></div>
+                <div class="circulo" [ngClass]="{amarillo: selectedColor == 'amarillo'}"></div>
+                <div class="circulo" [ngClass]="{verde: selectedColor == 'verde'}"></div>
+            </div>
         </div>
+        
+        <!--Obtenemos el color que el usuario ha seleccionado en el desplegable del controlador-->
+        <app-controlador (selectedColor)="getSelectedColor($event)"></app-controlador>
     </div>
-    
-    <app-controlador (emitColors)="getColor($event)" (selectedColor)="getSelectedColor($event)"></app-controlador>
-</div>
 

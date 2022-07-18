@@ -21,9 +21,11 @@
 .btn-child > button {
     margin-right: 16px;
     font-size: 16px;
-    box-shadow: 4px 3px 7px 1px #666bc2;
+    box-shadow: 3px 3px 7px 1px #666bc2;
 }
 
+
+/* Código para ajustarlo a dispositivos más pequeños */
 @media (max-width: 1200px){
     .child{
         width: auto;

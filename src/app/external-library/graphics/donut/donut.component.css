@@ -4,3 +4,12 @@
     width: 1170px;
     margin: 50px auto;
 }
+
+/* Código para cuando se mire desde dispositivos móviles */
+@media (max-width: 1170px){
+
+    .graph2 {
+        width: auto;
+    }
+  
+}

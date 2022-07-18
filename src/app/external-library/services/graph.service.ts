@@ -8,16 +8,15 @@ import { Observable } from 'rxjs';
 })
 export class GraphService {
 
-  //private countryUrl = 'https://api.openweathermap.org/data/2.5/forecast?lat=37.7728858&lon=-3.7883289&cnt=7&units=metric&appid=5420eecf943645df7080600ac51bebff';
-
-  private mobileUrl = 'https://api-mobilespecs.azharimm.site/v2/top-by-fans';
+  //Url de la api  que contiene los datos de los móbiles top by fans
+  private mobileUrl = 'https://api-mobilespecs.azharimm.site/v2';
 
   constructor( private http: HttpClient) { }
 
 
-  //Método que devuelve todos los paises que hay en la db
+  //Método que devuelve todos los datos que hay en la api
   getPhones(): Observable<any>{
-    return this.http.get(`${this.mobileUrl}`);
+    return this.http.get(`${this.mobileUrl}/top-by-fans`);
 
   }
 }

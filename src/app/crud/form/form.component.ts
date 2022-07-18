@@ -20,9 +20,8 @@ export class FormComponent implements OnInit {
 
   coutry: Countries[] = [];
   
-  //Para ocultar la contraseña
+  //Para ocultar o mostrar la contraseña
   hide = true;
-
   hide2 = true;
 
 
@@ -38,16 +37,20 @@ export class FormComponent implements OnInit {
     city: [ '', [Validators.required] ]
   },
   {
+    //Validaciones personales
     validators: [ this.validPass.samePass('password','password2')]
   });
+
 
   constructor( private fb: FormBuilder,
                private userService: UsersService,
                private countryService: CountryService,
                private validPass: ValidatorPasswordService) { }
 
+
   ngOnInit(): void {
 
+    //Nada más iniciar la aplicación, cargo la lista de países
     this.countryService.getAllCountries()
       .subscribe((countries) => this.coutry = countries )
   }
@@ -73,19 +76,22 @@ export class FormComponent implements OnInit {
 
     //Si el Id no existe, se crea un usuario nuevo
     if(this.myForm.get('id')?.value === ""  || this.myForm.get('id')?.value === null ){
-      //this.changeText = 'Crear';
 
+      //Envío a la funcion de newUser los valores del nuevo usuario
       this.userService.newUser( this.myForm.value )
       .subscribe(() => this.userService.sendUser())
 
+      //Después reseteo el formulario
       this.myForm.reset('');
 
-    }else{ //En caso contrario, modifica el usuario ya existente
+    }
+    else{ //En caso contrario, modifica el usuario ya existente
 
-      //this.changeText = 'Editar';
+      //Envío a la base de datos el usuario con cualquier modificación
       this.userService.modifyUser(this.myForm.value)
         .subscribe(() => this.userService.sendUser())
 
+        //Después limpio el formulario
         this.myForm.reset('');
     }
     

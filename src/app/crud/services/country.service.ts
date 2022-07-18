@@ -8,6 +8,7 @@ import { Countries } from '../interfaces/country.interface';
 })
 export class CountryService {
 
+  //Variable que almacena la url de la API
   private countryUrl = 'https://restcountries.com/v2/';
 
   constructor( private http: HttpClient) { }

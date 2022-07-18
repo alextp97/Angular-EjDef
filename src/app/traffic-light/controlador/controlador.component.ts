@@ -9,23 +9,21 @@ import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 })
 export class ControladorComponent implements OnInit {
 
+  //Zona de declaracion de propiedades
   colors: string[] = ['rojo', 'amarillo', 'verde'];
-  choseColor: string = "rojo";
+  choseColor: string = '';
   selected: boolean = false;
   button: string = 'Off';
 
-  //Outputs para enviar los datos al componente del semáforo
-  @Output() emitColors : EventEmitter<string[]> = new EventEmitter();
+  //Output para enviar los datos al componente del semáforo
   @Output() selectedColor: EventEmitter<string> = new EventEmitter();
 
   constructor() { }
 
   ngOnInit(): void {
-
-    //Al inicio le envío al lightcomponent los colores disponibles
-    this.emitColors.emit(this.colors);
   }
 
+  //Funcion para habilitar o deshabilitar el desplegable y cambiar el texto de On a Off y viceversa
   changeText(){
 
     if(this.button === 'Off'){

@@ -9,6 +9,7 @@ import { User } from './interfaces/user.interface';
 })
 export class CrudComponent implements OnInit {
 
+  //Miro el formulario para poder pasarle los valores de la tabla más adelante
   @ViewChild(FormComponent) formComponent!: FormComponent;
 
   //Método para que los datos de la fila que seleccione el usuario aparezcan en el formulario

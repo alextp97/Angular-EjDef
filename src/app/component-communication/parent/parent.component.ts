@@ -10,7 +10,7 @@ import { ObservableService } from '../services/observable.service';
 export class ParentComponent implements OnInit {
 
 
-  parentMessage: String = new String;
+  parentMessage: String = new String; //Necesito que sea una new String para que funcione el Input todas las veces que queramos
   childMessage: string = '';
 
 

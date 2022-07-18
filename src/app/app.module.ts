@@ -6,6 +6,7 @@ import { CrudModule } from './crud/crud.module';
 import { FormsModule } from '@angular/forms';
 import { MaterialModule } from './material/material.module';
 import { NgChartsModule } from 'ng2-charts';
+import { NgxPaginationModule } from 'ngx-pagination'
 import { NgModule } from '@angular/core';
 import { SharedModule } from './shared/shared.module';
 
@@ -46,6 +47,7 @@ import { DonutComponent } from './external-library/graphics/donut/donut.componen
     BrowserAnimationsModule,
     CrudModule,
     FormsModule,
+    NgxPaginationModule,
     MaterialModule,
     NgChartsModule,
     SharedModule

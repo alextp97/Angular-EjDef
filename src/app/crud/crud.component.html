@@ -3,8 +3,9 @@
 <h1>Ejercicio CRUD con Form Reactive</h1>
 <hr>
 
-<div class="formContainer">
-   <app-form></app-form> 
-   <app-table (modUser)="dataUser($event)"></app-table>
+   <!--Contenedor que contiene el formulario padre y la tabla hija-->
+   <div class="formContainer">
+      <app-form></app-form> 
+      <app-table (modUser)="dataUser($event)"></app-table>
 
-</div>
+   </div>

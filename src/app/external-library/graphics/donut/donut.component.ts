@@ -12,14 +12,22 @@ import { defaultDonutCharData } from './defaultDonutCharData';
 })
 export class DonutComponent implements OnInit {
 
-  @ViewChild(BaseChartDirective) chart: BaseChartDirective | undefined;
-
+  //Declaro las propiedades
   phoneName: string[] = [];
   phoneFavourite: number[] = [];
   phones: Phone[] = [];
 
+
+  constructor( private graphService: GraphService) { }
+
+  //Declaro que esta gráfica va a ser de tipo pie
+  public pieChartType: ChartType = 'pie';
+
+
+  //Configuración de las opciones de la gráfica pie
   public pieChartOptions: ChartConfiguration['options'] = {
     responsive: true,
+    maintainAspectRatio: true,
     plugins: {
       legend: {
         display: true,
@@ -28,28 +36,25 @@ export class DonutComponent implements OnInit {
     }
   };
 
-  public pieChartType: ChartType = 'pie';
-
-  constructor( private graphService: GraphService) { }
-
+  //A este ChartData le asigno las propiedades del defaultBarCharData que me he creado antes
   public pieChartData: ChartData<'pie'> = defaultDonutCharData;
 
+
   ngOnInit(): void {
+
+    //Cuando se inicia la app llamo a la funcion que me trae todos los teléfonos de la api
     this.graphService.getPhones()
       .subscribe( datas => {
-        //console.log(datas)
         this.phones = datas.data.phones;
 
-
+        //Con el bucle for recorro todos los teléfonos para sacar sus nombres y el número de favoritos
         for (let phone of this.phones){
-          console.log(this.phoneName.push(phone.phone_name));
-           
+
+          this.phoneName.push(phone.phone_name);
           this.phoneFavourite.push(phone.favorites)
         }
 
-        this.pieChartData.labels!.push(this.phoneName);
-
-
+        //Asigno la información a sus respectivos campos para que se muestre en la gráfica
         this.pieChartData = {
           labels: this.phoneName,
           datasets: [

@@ -1,7 +1,5 @@
 
 <!--Contenedor del Formulario-->
-
-
 <form [formGroup]="myForm" autocomplete="off" class="form">
 
     <h1>Formulario de Registro</h1>
@@ -18,64 +16,84 @@
         </mat-form-field>
 
         <br>
+
+        <!--Span de validación de errores-->
         <span *ngIf="fieldNoValid('username')">
             Debe de tener mínimo 3 caracteres
         </span>
     </p>
 
+
     <!--Campo de la contraseña-->
     <p>
         <mat-hint>Contraseña</mat-hint> <br>
+
         <mat-form-field appearance="fill">
             <mat-label>Contraseña</mat-label>
+
             <input matInput
                     placeholder="Contraseña"
                     [type]="hide ? 'password' : 'text'"
                    formControlName="password"
                    required>
+
             <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
-            <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+
+            <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon> <!--Para mostrar u ocultar la contraseña-->
             </button>
         </mat-form-field>
 
         <br>
 
+        <!--Span de validación de errores-->
         <span *ngIf="fieldNoValid('password')">
             Debe de tener 4 caracteres mínimo
         </span>
     </p>
 
+
     <!--Campo para confirmar la contraseña-->
     <p>
         <mat-hint>Repita la contraseña</mat-hint> <br>
+        
         <mat-form-field appearance="fill">
             <mat-label>Repita la contraseña</mat-label>
+
             <input matInput
                    formControlName="password2" 
                    [type]="hide2 ? 'password' : 'text'" required>
+                   
             <button mat-icon-button matSuffix (click)="hide2 = !hide2" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
-            <mat-icon>{{hide2 ? 'visibility_off' : 'visibility'}}</mat-icon>
+
+            <mat-icon>{{hide2 ? 'visibility_off' : 'visibility'}}</mat-icon> <!--Para mostrar u ocultar la contraseña-->
             </button>
         </mat-form-field>
 
         <br>
+
+        <!--Span de validación de errores-->
         <span *ngIf="fieldNoValid('password2')">
             Las contraseñas deben de ser iguales
         </span>
     </p>
 
+
     <!--Campo para el email-->
     <p>
         <mat-hint>Email</mat-hint> <br>
+
         <mat-form-field appearance="fill">
             <mat-label>Email</mat-label>
+
             <input matInput placeholder="alex@bosonit.com"
                             formControlName="email"
                             required>
+
         </mat-form-field>
 
         <br>
 
+        <!--Span de validación de errores-->
         <span *ngIf="fieldNoValid('email')">
             Debe de ser un email válido
         </span>
@@ -85,13 +103,16 @@
     <!--Campo opcional para suscribirse-->
     <p>
         <mat-checkbox formControlName="offers"
-        checked="true">Enviarme ofertas promocionales</mat-checkbox>
+                      checked="true">
+                      Enviarme ofertas promocionales
+        </mat-checkbox>
     </p>
 
 
     <!--Campo para el desplegable del pais-->
     <p>
         <mat-hint>País</mat-hint> <br>
+
         <mat-form-field appearance="fill">
             <mat-label>País</mat-label>
                 <mat-select formControlName="coutry"
@@ -106,46 +127,41 @@
 
         <br>
 
+        <!--Span de validación de errores-->
         <span *ngIf="fieldNoValid('coutry')">
             Debe de seleccionar un país 
         </span>
     </p>
 
+
     <!--Campo para introducir la ciudad-->
     <p>
         <mat-hint>Ciudad</mat-hint> <br>
+
         <mat-form-field appearance="fill">
             <mat-label>Ciudad</mat-label>
+
             <input matInput placeholder="Ciudad"
                             formControlName="city"
                             required>
         </mat-form-field>
 
         <br>
+
+        <!--Span de validación de errores-->
         <span *ngIf="fieldNoValid('city')">
             No puede estar vacío
         </span>
     </p>
+
 
     <!--Botón para crear/modificar un usuario-->
     <p>
         <button mat-raised-button color="primary"
                 type="submit"
                 (click)="createUser()"
-               >Guardar</button>
+               >Guardar
+        </button>
     </p>
     
 </form>
-
-<!--<span>Valid</span>
-<pre>{{ myForm.valid }}</pre>
-<pre>{{ myForm.errors | json}}</pre>
-
-<span>Pristine</span>
-<pre>{{ myForm.pristine }}</pre>
-
-<span>Touched</span>
-<pre>{{ myForm.touched }}</pre>
-
-<span>Value</span>
-<pre>{{ myForm.value | json }}</pre>-->

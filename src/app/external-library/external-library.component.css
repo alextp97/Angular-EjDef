@@ -8,10 +8,20 @@ hr {
     margin: 25px auto;
 }
 
+.container {
+    width: 1170px;
+    margin: 0 auto;
+}
+
+/* Código para cuando se mire desde dispositivos más pequeños */
 @media (max-width: 1170px){
 
     hr {
         width: 90%;
+    }
+
+    .container {
+        width: auto;
     }
   
 }

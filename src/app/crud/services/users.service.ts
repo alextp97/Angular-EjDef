@@ -8,12 +8,13 @@ import { User } from '../interfaces/user.interface';
 })
 export class UsersService {
 
+  //Url para conectar con el localhost y ver la base de datos
   private urlUser = 'http://localhost:3000';
 
   private subject = new Subject<void>();
 
+  
   constructor( private http: HttpClient) { }
-
 
   //Obtengo todos los usuarios de la base de datos
   getUsers(): Observable<User[]>{

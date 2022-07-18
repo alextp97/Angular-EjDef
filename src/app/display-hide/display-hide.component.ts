@@ -7,17 +7,21 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DisplayHideComponent implements OnInit {
 
+  //Declaro las variables
   show: boolean = false;
   showText: string = 'Mostrar';
 
+
+  //Funcion que muestra u oculta la caja de texto y cambia el nombre del botón
   showHide(){
 
-    if(this.show){
-      this.show = false;
+    this.show = !this.show;
+
+    //Si es falso se oculta la caja con el texto y el botón cambia a 'mostrar'
+    if(!this.show){  
       this.showText = 'Mostrar';
     }
     else {
-      this.show = true;
       this.showText = 'Ocultar';
     }
   }
