@@ -1,7 +1,5 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
-import { ChartConfiguration, ChartData } from 'chart.js';
-import { BaseChartDirective } from 'ng2-charts';
-import { defaultBarCharData } from './defaultBarCharData';
+import { ChartConfiguration, ChartData, ChartType } from 'chart.js';
 import { Phone } from '../../interfaces/mobile.interface';
 import { GraphService } from '../../services/graph.service';
 
@@ -19,26 +17,29 @@ export class BarsComponent implements OnInit {
 
   constructor(private graphService: GraphService) { }
 
+   //Declaro que la gráfica será de tipo 'bar' => barras
+   public barChartType: ChartType = 'bar';
+
+   //Inicializo los datos con un arreglo vacio para pasarle los datos más adelante
+   public barChartData: ChartData<'bar'> = {
+     labels: [],
+     datasets: []
+   };
+
   //Opciones del las gráficas de barras
   public barChartOptions: ChartConfiguration['options'] = {
     responsive: true,
     maintainAspectRatio: true,
     borderColor:'blue',
     scales: {
-      x: {
-      
-      },
+      x: {},
       y: {
         min: 0
       }
-    },
-    
+    },  
   };
 
-  //A este ChartData le asigno las propiedades del defaultBarCharData que me he creado antes
-  public barChartData: ChartData<'bar'> = defaultBarCharData;
-
-
+  
   ngOnInit(): void {
 
     //Cuando se inicia la app llamo a la funcion que me trae todos los teléfonos de la api
@@ -60,6 +61,7 @@ export class BarsComponent implements OnInit {
           datasets: [
             { data: this.phoneFavourite, label: 'Popularidad', backgroundColor: '#3D86CC'}
           ]
+
         }
       })
   }

@@ -86,9 +86,9 @@
       "password": "Hola",
       "password2": "Hola",
       "email": "annel@bosonit.com",
-      "offers": true,
+      "offers": false,
       "coutry": "Curaçao",
-      "city": "Daddy Yankee"
+      "city": "Curaçao"
     },
     {
       "id": 16,

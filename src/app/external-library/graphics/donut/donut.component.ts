@@ -1,9 +1,7 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { ChartConfiguration, ChartData, ChartType } from 'chart.js';
-import { BaseChartDirective } from 'ng2-charts';
 import { Phone } from '../../interfaces/mobile.interface';
 import { GraphService } from '../../services/graph.service';
-import { defaultDonutCharData } from './defaultDonutCharData';
 
 @Component({
   selector: 'app-donut',
@@ -23,6 +21,12 @@ export class DonutComponent implements OnInit {
   //Declaro que esta gráfica va a ser de tipo pie
   public pieChartType: ChartType = 'pie';
 
+  //Inicializo los datos con un arreglo vacio para pasarle los datos más adelante
+  public pieChartData: ChartData<'pie'> = {
+    labels: [],
+    datasets: []
+  };
+
 
   //Configuración de las opciones de la gráfica pie
   public pieChartOptions: ChartConfiguration['options'] = {
@@ -35,9 +39,6 @@ export class DonutComponent implements OnInit {
       },
     }
   };
-
-  //A este ChartData le asigno las propiedades del defaultBarCharData que me he creado antes
-  public pieChartData: ChartData<'pie'> = defaultDonutCharData;
 
 
   ngOnInit(): void {
