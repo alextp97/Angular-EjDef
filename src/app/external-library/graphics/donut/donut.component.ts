@@ -59,7 +59,7 @@ export class DonutComponent implements OnInit {
         this.pieChartData = {
           labels: this.phoneName,
           datasets: [
-            { data: this.phoneFavourite, label: 'Popularidad'}
+            { data: this.phoneFavourite}
           ]
         }
       })

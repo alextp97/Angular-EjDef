@@ -17,8 +17,10 @@ export class BarsComponent implements OnInit {
 
   constructor(private graphService: GraphService) { }
 
+
    //Declaro que la gráfica será de tipo 'bar' => barras
    public barChartType: ChartType = 'bar';
+
 
    //Inicializo los datos con un arreglo vacio para pasarle los datos más adelante
    public barChartData: ChartData<'bar'> = {
@@ -26,6 +28,7 @@ export class BarsComponent implements OnInit {
      datasets: []
    };
 
+   
   //Opciones del las gráficas de barras
   public barChartOptions: ChartConfiguration['options'] = {
     responsive: true,
@@ -39,7 +42,7 @@ export class BarsComponent implements OnInit {
     },  
   };
 
-  
+
   ngOnInit(): void {
 
     //Cuando se inicia la app llamo a la funcion que me trae todos los teléfonos de la api
