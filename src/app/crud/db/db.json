@@ -7,7 +7,7 @@
       "password2": "1234",
       "email": "sergi@hotmail.com",
       "offers": false,
-      "coutry": "Alemania",
+      "coutry": "Germany",
       "city": "Berlín"
     },
     {
@@ -17,7 +17,7 @@
       "password2": "12345",
       "email": "gabi@gmail.com",
       "offers": true,
-      "coutry": "España",
+      "coutry": "Spain",
       "city": "Granada"
     },
     {
@@ -27,7 +27,7 @@
       "password2": "1234",
       "email": "maria@bosonit.com",
       "offers": false,
-      "coutry": "Francia",
+      "coutry": "France",
       "city": "Le lasagne"
     },
     {
@@ -37,7 +37,7 @@
       "password2": "12345",
       "email": "alex@gmail.com",
       "offers": true,
-      "coutry": "España",
+      "coutry": "Spain",
       "city": "Jaén"
     },
     {
@@ -83,12 +83,12 @@
     {
       "id": 15,
       "username": "Annel",
-      "password": "Hola",
-      "password2": "Hola",
+      "password": "Hola1",
+      "password2": "Hola1",
       "email": "annel@bosonit.com",
       "offers": false,
       "coutry": "Curaçao",
-      "city": "Curaçao"
+      "city": "Curasao"
     },
     {
       "id": 16,
@@ -99,6 +99,16 @@
       "offers": true,
       "coutry": "Cambodia",
       "city": "Cambodia"
+    },
+    {
+      "id": 17,
+      "username": "David",
+      "password": "123456",
+      "password2": "123456",
+      "email": "david@gmail.com",
+      "offers": null,
+      "coutry": "Finland",
+      "city": "Helsinki"
     }
   ]
 }

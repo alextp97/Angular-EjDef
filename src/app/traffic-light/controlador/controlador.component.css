@@ -1,7 +1,7 @@
 
 
 .controller {
-    margin-top: 40px;
+    margin: 40px 0px 65px;
 }
 
 h1 {
@@ -21,22 +21,41 @@ h1 {
 
 .checkbox {
 
-    margin: 0px 5px 0px 5px;
+    margin: 0px 5px;
 }
 
 mat-form-field {
    margin-left: 45px;
 }
 
+
+/* Código del select */ 
 .selectTraffic {
 
-    width: 100px;
-    height: 30px;
+    width: 110px;
+    height: 35px;
     margin: 0 6px;
+    padding-left: 5px;
 
 }
 
 .selectTraffic option {
     font-size: 16px;
 }
+
+.controller .selectTraffic {
+    border: 2px solid black;
+    border-radius: 5px;
+    font-size: 16px;
+    background: #F2F2F2;
+}
+
+
+/* Código para modificar el checkbox */
+.controller .checkbox {
+    width: 16px;
+    height: 16px;
+}
+
+
 

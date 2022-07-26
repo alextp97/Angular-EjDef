@@ -4,6 +4,10 @@
 
     <!--Contenedor que agrupa tanto al div del semaforo como el de las luces-->
     <div class="container">
+        <!--Obtenemos el color que el usuario ha seleccionado en el desplegable del controlador-->
+        <app-controlador (selectedColor)="getSelectedColor($event)"></app-controlador>
+
+        
         <div class="semaforo">
             <div class="lights">
                 <div class="circulo" [ngClass]="{rojo: selectedColor == 'rojo'}"></div>
@@ -12,7 +16,6 @@
             </div>
         </div>
         
-        <!--Obtenemos el color que el usuario ha seleccionado en el desplegable del controlador-->
-        <app-controlador (selectedColor)="getSelectedColor($event)"></app-controlador>
+        
     </div>
 

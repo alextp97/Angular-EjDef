@@ -30,6 +30,10 @@ hr {
     margin: 20px 0px;
 }
 
+.btnHide > button {
+    box-shadow: 3px 3px 7px 1px #666bc2;
+}
+
 .showText {
     width: 400px;
     height: 100px;

@@ -26,5 +26,9 @@ hr {
     hr {
         width: 90%;
     }
+
+    app-table {
+        margin-bottom: 30px;
+    }
   
 }
