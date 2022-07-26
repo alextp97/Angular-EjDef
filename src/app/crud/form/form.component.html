@@ -95,7 +95,7 @@
 
         <!--Span de validación de errores-->
         <span *ngIf="fieldNoValid('email')">
-            Debe de ser un email válido
+            {{ emailErrorsMsg }}
         </span>
     </p>
 

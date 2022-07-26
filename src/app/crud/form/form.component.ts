@@ -3,6 +3,7 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Countries, Name } from '../interfaces/country.interface';
 import { User } from '../interfaces/user.interface';
 import { CountryService } from '../services/country.service';
+import { EmailValidatorService } from '../services/email-validator.service';
 import { UsersService } from '../services/users.service';
 import { ValidatorPasswordService } from '../services/validator-password.service';
 
@@ -31,7 +32,7 @@ export class FormComponent implements OnInit {
     username: [ '', [Validators.required, Validators.minLength(3)] ],
     password: [ '', [Validators.required, Validators.minLength(4)]],
     password2: [ '', [Validators.required] ],
-    email: [ '', [Validators.required, Validators.email] ],
+    email: [ '', [Validators.required, Validators.email], [ this.emailValidator ] ],
     offers: [ false ],
     coutry: ['' , [Validators.required]],
     city: [ '', [Validators.required] ]
@@ -45,7 +46,8 @@ export class FormComponent implements OnInit {
   constructor( private fb: FormBuilder,
                private userService: UsersService,
                private countryService: CountryService,
-               private validPass: ValidatorPasswordService) { }
+               private validPass: ValidatorPasswordService,
+               private emailValidator: EmailValidatorService) { }
 
 
   ngOnInit(): void {
@@ -54,7 +56,6 @@ export class FormComponent implements OnInit {
     this.countryService.getAllCountries()
       .subscribe((countries) => this.coutry = countries )
   }
-
  
 
   //Compruebo si los campos han sido tocados o tienen errores para mostrar los datos
@@ -94,12 +95,21 @@ export class FormComponent implements OnInit {
         //Después limpio el formulario
         this.myForm.reset('');
     }
-    
-
-    
+  }
 
 
+  //Este getter nos permite mostrar diferentes errores en el input del email
+  get emailErrorsMsg(): string{
 
+    const errors = this.myForm.get('email')?.errors;
+    const email = this.myForm.get('email')?.value;
+
+    if(errors?.['required']){
+      return 'Este campo no puede estar vacio.';
+    } else if( errors?.['emailCatch']){
+      return `El email ${ email } ya está en uso`
+    }
+    return '';
   }
 
 }
