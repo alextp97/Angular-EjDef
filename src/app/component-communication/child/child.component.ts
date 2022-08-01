@@ -14,13 +14,13 @@ export class ChildComponent implements OnInit {
   @Output() childMsg = new EventEmitter<string>(); //Decorador del Output para enviar datos al padre
 
 
-  constructor( private _communicationService: CommunicationService,
+  constructor( private _communicationService:CommunicationService,
                 private _observableService: ObservableService) { }
 
   ngOnInit(): void {
 
-    //Recibo el mensaje del padre mediante el servicio
-    this._communicationService.msgFather.subscribe((txt) => (this.msg = txt));
+    //Mando al servicio todas las propiedades de la clase hijo
+    this._communicationService.childClass = this;
 
     //Recibo el mensaje del padre mediante el servicio del observable
     this._observableService.getFromParent().subscribe((txtObs) => (this.msg = txtObs));
@@ -30,7 +30,7 @@ export class ChildComponent implements OnInit {
 
   //Envio el mensaje a el padre mediante un servicio
   childService(){
-    this._communicationService.sendToFatherService('child using service');
+    this._communicationService.fatherClass.childMessage = "child using service";
   }
 
   //Método para enviar el mensaje al padre mediante Output

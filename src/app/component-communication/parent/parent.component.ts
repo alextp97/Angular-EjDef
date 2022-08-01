@@ -10,17 +10,17 @@ import { ObservableService } from '../services/observable.service';
 export class ParentComponent implements OnInit {
 
 
-  parentMessage: String = new String; //Necesito que sea una new String para que funcione el Input todas las veces que queramos
+  parentMessage: String = new String(''); //Necesito que sea una new String para que funcione el Input todas las veces que queramos
   childMessage: string = '';
 
 
-  constructor(private _communicationService: CommunicationService,
+  constructor( private _communicationService:CommunicationService,
               private _observableService: ObservableService) { }
 
   ngOnInit(): void {
 
-    //Recibo el mensaje del hijo mediante el servicio
-    this._communicationService.msgChild.subscribe((txt) => (this.childMessage = txt));
+    //Al servicio le mando todas las propiedades de la clase del padre, por eso lo igualo al this
+    this._communicationService.fatherClass = this;
 
 
     //Recibo el mensaje del hijo mediante el servicio del obsevable
@@ -29,9 +29,9 @@ export class ParentComponent implements OnInit {
 
 
 
-  //Enviar mensaje al hijo mediante un servicio
+  //Enviar mensaje al hijo mediante un servicio accediendo a sus propiedades
   parentService(){
-    this._communicationService.sendToChildService('PARENT USING SERVICE');
+    this._communicationService.childClass.msg = "PARENT USING SERVICE";
   }
 
   //Enviar mensaje al hijo usando Input

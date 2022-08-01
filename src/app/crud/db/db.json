@@ -45,7 +45,7 @@
       "username": "Jenaro",
       "password": "12345",
       "password2": "12345",
-      "email": "la@gmail.com",
+      "email": "jenaro@jene.com",
       "offers": false,
       "coutry": "Andorra",
       "city": "La Massana"
@@ -109,6 +109,16 @@
       "offers": null,
       "coutry": "Finland",
       "city": "Helsinki"
+    },
+    {
+      "id": 18,
+      "username": "Bosonito",
+      "password": "123456",
+      "password2": "123456",
+      "email": "theboss@boss.com",
+      "offers": true,
+      "coutry": "France",
+      "city": "Patatas"
     }
   ]
 }
