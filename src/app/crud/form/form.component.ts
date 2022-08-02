@@ -14,7 +14,6 @@ import { ValidatorPasswordService } from '../services/validator-password.service
 })
 export class FormComponent implements OnInit {
 
-  //changeText: string = 'Crear';
   
   //Implemento la interfaz de User para los campos del formulario
   user!: User;

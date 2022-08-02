@@ -101,16 +101,6 @@
       "city": "Cambodia"
     },
     {
-      "id": 17,
-      "username": "Ana Luz",
-      "password": "123456",
-      "password2": "123456",
-      "email": "analuz@gmail.com",
-      "offers": null,
-      "coutry": "Finland",
-      "city": "Helsinki"
-    },
-    {
       "id": 18,
       "username": "Bosonito",
       "password": "123456",
@@ -118,7 +108,7 @@
       "email": "theboss@boss.com",
       "offers": true,
       "coutry": "France",
-      "city": "Patatas"
+      "city": "Paris"
     }
   ]
 }

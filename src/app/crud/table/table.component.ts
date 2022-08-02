@@ -15,7 +15,6 @@ export class TableComponent implements OnInit {
 
   clickEvent: Subscription;
   listUsers: User[] = [];
-  pages: number = 1;
 
   constructor( private userService: UsersService) {
 

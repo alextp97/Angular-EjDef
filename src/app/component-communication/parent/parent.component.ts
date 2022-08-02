@@ -17,7 +17,7 @@ export class ParentComponent implements OnInit {
   constructor( private _communicationService:CommunicationService,
               private _observableService: ObservableService) { }
 
-  ngOnInit(): void {
+  ngOnInit() {
 
     //Al servicio le mando todas las propiedades de la clase del padre, por eso lo igualo al this
     this._communicationService.fatherClass = this;

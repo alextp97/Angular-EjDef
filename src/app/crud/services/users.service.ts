@@ -43,7 +43,7 @@ export class UsersService {
   }
 
 
-  //Eventos para cuando creo un nuevo usuario
+  //Eventos para cuando creo un nuevo usuario o lo modifico
   sendUser(){
     this.subject.next();
   }
